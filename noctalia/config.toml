@@ -1,0 +1,319 @@
+[bar.default]
+center = [ "date", "spacer_2", "clock", "spacer_3", "weather" ]
+concave_edge_corners = false
+end = [
+    "media",
+    "tray",
+    "lock_keys",
+    "notifications",
+    "widget",
+    "declarative_update",
+    "EditPacmanPackages",
+    "EditAurPackages",
+    "EditFlatpakPackages",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+    "settings",
+    "session"
+]
+margin_ends = 0
+padding = 12
+radius = 0
+start = [ "launcher", "wallpaper", "workspaces", "dock_toggle", "theme_mode", "nightlight", "spacer_4", "taskbar" ]
+
+[dock]
+background_opacity = 0.88999998010694981
+cross_axis_padding = 0
+enabled = true
+icon_size = 32
+item_spacing = 0
+launcher_position = "start"
+pinned = [
+    "declarative",
+    "dev.noctalia.Noctalia",
+    "kitty",
+    "yazi",
+    "thunar",
+    "librewolf",
+    "org.xfce.mousepad",
+    "dev.zed.Zed",
+    "org.keepassxc.KeePassXC",
+    "obsidian",
+    "LTspice_XVII",
+    "io.gitlab.news_flash.NewsFlash",
+    "app.drey.Dialect"
+]
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
+
+[hooks]
+started = "export TERMINAL=/usr/bin/kitty"
+
+[location]
+auto_locate = true
+
+[lockscreen]
+fingerprint = false
+monitors = [ "eDP-1" ]
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@WL-1", "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 522.5
+    cy = 873.24603271484375
+    output = "WL-1"
+    placement_height = 1062.0
+    placement_width = 1045.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+temperature_day = 5000
+temperature_night = 3500
+
+[notification]
+history_retention_hours = 6
+
+[plugin_settings."ezequiel/mango_layouts"]
+list_mode = true
+panel_position = "center"
+
+[plugin_settings."yuuto/arch-updater"]
+aur_helper = "off"
+auto_check_hours = 6
+
+[plugins]
+enabled = [ "yuuto/arch-updater", "thaer99ob/default-apps", "kenn/keybind-cheatsheet" ]
+
+[shell]
+polkit_agent = true
+
+    [shell.launcher]
+    app_grid = true
+
+    [shell.screenshot]
+    annotate = true
+    confirm_region = true
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "l"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "s"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 5.0
+    enabled = true
+    shortcut = "x"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "~/.config/mango_noctalia/scripts/switch-to-dms-shell.sh"
+    countdown_seconds = 5.0
+    enabled = false
+    glyph = "logout"
+    label = "Log Out to DMS"
+    shortcut = "d"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 5.0
+    enabled = true
+    shortcut = "r"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 5.0
+    enabled = true
+    label = "Power off"
+    shortcut = "p"
+    variant = "destructive"
+
+[theme]
+builtin = "Tokyo-Night"
+community_palette = "ADW"
+mode = "dark"
+pure_black_dark = true
+source = "community"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "kitty", "mango", "qt" ]
+    community_ids = [ "libreoffice", "obsidian", "zed" ]
+
+[wallpaper.default]
+path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+
+[wallpaper.last]
+path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+
+[wallpaper.monitors.HDMI-A-1]
+path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+
+[wallpaper.monitors.eDP-1]
+path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+
+[widget.EditAurPackages]
+glyph = "brand-yahoo"
+tooltip = "Edit Yay Aur Packages"
+type = "custom_button"
+
+    [widget.EditAurPackages.actions]
+    left = "exec mousepad ~/.config/declarative/auryay.packages"
+
+[widget.EditFlatpakPackages]
+glyph = "bed-flat"
+tooltip = "Edit Flatpak Packages"
+type = "custom_button"
+
+    [widget.EditFlatpakPackages.actions]
+    left = "exec mousepad ~/.config/declarative/flatpak.packages"
+
+[widget.EditPacmanPackages]
+glyph = "pacman"
+tooltip = "Edit Pacman Packages"
+type = "custom_button"
+
+    [widget.EditPacmanPackages.actions]
+    left = "exec mousepad ~/.config/declarative/pacman.packages"
+
+[widget.clock]
+color = "primary"
+font_scale = 1.2
+
+[widget.declarative_update]
+glyph = "arrow-down-from-arc"
+tooltip = "Declarative Update"
+type = "custom_button"
+
+    [widget.declarative_update.actions]
+    left = "exec kitty -e ~/.local/bin/declarative"
+
+[widget.dock_toggle]
+tooltip = "Toggle Dock Visibility"
+type = "custom_button"
+
+    [widget.dock_toggle.actions]
+    left = "dock-toggle"
+    right = "dock-reload"
+
+[widget.media]
+album_art_only = true
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.spacer_3]
+type = "spacer"
+
+[widget.spacer_4]
+type = "spacer"
+
+[widget.taskbar]
+pinned_opacity = 1.0
+show_all_outputs = true
+
+[widget.tray]
+detached_panel = true
+hide_passive = false
+
+[widget.widget]
+type = "yuuto/arch-updater:widget"

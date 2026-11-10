@@ -1,0 +1,4 @@
+#UNIT FILE             STATE   PRESET
+wireplumber.service   enabled enabled
+xdg-user-dirs.service enabled enabled
+

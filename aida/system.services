@@ -1,0 +1,14 @@
+#UNIT FILE                          STATE   PRESET
+avahi-daemon.service               enabled disabled
+bluetooth.service                  enabled disabled
+#cups.service                       enabled disabled
+firewalld.service                  enabled disabled
+getty@.service                     enabled enabled
+NetworkManager-dispatcher.service  enabled disabled
+NetworkManager-wait-online.service enabled disabled
+NetworkManager.service             enabled disabled
+power-profiles-daemon.service      enabled disabled
+sddm.service                       enabled disabled
+sshd.service                       enabled disabled
+systemd-timesyncd.service          enabled enabled
+

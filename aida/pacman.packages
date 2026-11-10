@@ -1,0 +1,456 @@
+# My personal additions
+
+# Keyboard stuff
+wev wayland variant of xev keyboard debug tool used for mangowm
+
+# New Rust CLI tools replacements
+#bat for cat
+#eza for ls evoke by e.g. 'eza ~'
+#ripgrep for grep evoke by e.g. 'batcat file | rg search-term'
+#fd for find evoke by e.g. 'fd -e py' or 'fdfind ...' (on debian)
+#zoxide for cd
+
+# Terminals
+#wezterm used on xfce
+#alacritty
+foot wayland-only and used for mangowm
+kitty terminal for both wayland and xorg
+
+# Browsers, mail clients, and web apps
+librewolf
+thunderbird
+#geary
+#balsa
+#claws-mail
+#evolution
+#kmail
+#kmail-account-wizard
+
+# Printer stuff - installed by initial installation
+#cups printing
+#cups-pdf
+#foomatic-db database of printers
+
+# Office tools
+dialect gnome translate
+ghostwriter kde markdown editor
+keepassxc
+libreoffice-fresh
+obsidian
+#okular kde universal document viewer - on xfce: xpdf
+xpdf
+
+# Games - may later
+# ksudoku
+
+# Desktop Enviroment
+#flatpak already intalled
+##hyprpolkitagent
+mangowm
+sddm
+#plasma-login-manager
+#greetd used with dms greeter
+
+# Windows system
+wine
+
+# File managers
+#thunar already installed
+#thunar-volman already install
+yazi
+chafa for yazi
+resvg for yazi
+
+# Editors and development tools
+#l3afpad - not needed on xfce
+# mousepad - alreadu installed
+zenity
+zed
+
+# Development tools
+archiso for making arch based iso files
+#qemu-desktop virtual machine for testing iso file
+#edf2-ovmf UEFI support for qemu -- not in arch repos - wrong: it's installed as a dependency, it seems
+qemu-desktop
+qemu-img
+#virt-manager
+#libvirt
+
+# Themes and Fonts
+#adw-gtk-theme  - not needed on xfce
+#ttf-dejavu - already installed
+ttf-jetbrains-mono
+ttf-nerd-fonts-symbols-mono
+
+# Systems tools
+btrfs-progs
+mediawriter
+#ufw
+firewalld
+
+# News and social apps
+newsflash
+
+# Packages recommended for Mango (mostly replaced by dankshell or noctalia)
+#rofi
+#foot
+#xdg-desktop-portal-wlr
+#swaybg
+#waybar
+#wl-clip-persist
+#cliphist
+#wl-clipboard
+#wlsunset
+#swaync
+#pamixer
+#swayidle
+#brightnessctl
+#swayosd
+#wlr-randr
+#grim
+#slurp
+##satty
+##sox
+
+# Audio tools
+#reaper A complete digital audio production application for computers
+#sws A collection of features that seamlessly integrate into REAPER
+
+# Problematic audio stuff
+# Removed manually: sudo pacman -Rs pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio-zeroconf pulseaudio-lirc
+#pipewire # installed as depencency to pipewire-pulse and others
+pipewire-pulse - not needed on xfce
+liblsp-audio-pipewire-lib
+pipewire-alsa
+pipewire-jack
+pipewire-zeroconf
+
+# Dankshell packages - maybe later
+##cava
+# dankcalendar # not available in pacman repository
+#dgop # depedency for dms-shell
+#dsearch # not available in pacman repository
+##matugen
+#qt6-multimedia # dependency
+##cups-pk-helper
+##iwd #
+#networkmanager # already included, see below
+##power-profiles-daemon # explicit
+##qt6ct
+##wtype
+##dms-shell
+#dms-shell
+#power-profiles-daemon
+#dgop
+cups-pk-helper
+qt6-imageformats 
+#kimageformats
+#matugen
+#cava
+#qt5ct
+#wf-shell with wayland-logout
+
+# Noctalia packages - maybe later
+noctalia
+power-profiles-daemon
+quickshell
+qt5ct
+qt6-wayland
+qt6ct
+
+
+# ############################## Packages from original installation - #####################################
+#
+# Do NOT add packages here!
+# Don't remove packages here but comment out with # if not needed
+#
+alsa-firmware
+alsa-oss
+alsa-plugins
+alsa-utils
+amd-ucode
+android-tools
+android-udev
+appstream-glib
+arch-install-scripts
+archiso
+archlinux-appstream-data
+ark
+asciidoc
+b43-fwcutter
+base
+base-devel
+bash-completion
+bind
+bluedevil
+blueman
+bluez-tools
+broadcom-wl-dkms
+busybox
+cantarell-fonts
+catfish
+cdrtools
+crypto++
+cryptsetup
+cups
+cups-pdf
+dbus-glib
+ddrescue
+device-mapper
+dhclient
+dhcpcd
+dialog
+diffutils
+dnsmasq
+e2fsprogs
+ecryptfs-utils
+efibootmgr
+efitools
+ethtool
+ex-vi-compat
+exfat-utils
+exo
+f2fs-tools
+ffmpeg
+ffmpegthumbnailer
+file-roller
+flatpak
+foomatic-db
+foomatic-db-engine
+foomatic-db-gutenprint-ppds
+foomatic-db-nonfree
+foomatic-db-nonfree-ppds
+foomatic-db-ppds
+fsarchiver
+galculator
+garcon
+git
+glances
+gobject-introspection
+gpart
+gparted
+grub
+gsound
+gst-libav
+gst-plugins-bad
+gst-plugins-ugly
+gstreamer
+gutenprint
+gvfs
+gvfs-afc
+gvfs-goa
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+hardinfo2
+hplip
+htop
+hwinfo
+inetutils
+intel-ucode
+itstool
+iwd
+jfsutils
+less
+libdvdcss
+libgsf
+libhandy
+libopenraw
+libwnck3
+#lightdm
+#lightdm-gtk-greeter
+#lightdm-gtk-greeter-settings
+linux
+linux-atm
+linux-firmware
+linux-headers
+logrotate
+lsb-release
+lvm2
+lxsession
+man-db
+man-pages
+mdadm
+mesa-demos
+meson
+mkinitcpio
+mkinitcpio-busybox
+mkinitcpio-nfs-utils
+mobile-broadband-provider-info
+modem-manager-gui
+mousepad
+mplayer
+mtpfs
+nano
+ndisc6
+net-snmp
+net-tools
+netctl
+network-manager-applet
+networkmanager
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+nfs-utils
+noto-fonts
+nss-mdns
+ntfs-3g
+os-prober
+pacman-contrib
+parole
+partimage
+pavucontrol
+perl
+plocate
+poppler-glib
+#pulseaudio
+#pulseaudio-alsa
+#pulseaudio-bluetooth
+#pulseaudio-equalizer
+#pulseaudio-jack
+#pulseaudio-lirc
+#pulseaudio-zeroconf
+pv
+ristretto
+rp-pppoe
+rsync
+s-nail
+screenfetch
+sdparm
+sg3_utils
+smartmontools
+solid
+sudo
+sysfsutils
+system-config-printer
+systemd-sysvcompat
+systemd-ui
+texinfo
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+ttf-bitstream-vera
+ttf-caladea
+ttf-carlito
+ttf-croscore
+ttf-dejavu
+ttf-liberation
+ttf-ubuntu-font-family
+tumbler
+unrar
+unzip
+upower
+usb_modeswitch
+usbutils
+vala
+vte3
+wget
+which
+whois
+wireless-regdb
+wireless_tools
+wvdial
+xdg-user-dirs
+xdg-user-dirs-gtk
+xf86-input-evdev
+xf86-input-synaptics
+xf86-video-fbdev
+xf86-video-vesa
+xfburn
+xfce4-appfinder
+xfce4-battery-plugin
+xfce4-clipman-plugin
+xfce4-cpufreq-plugin
+xfce4-cpugraph-plugin
+xfce4-dict
+xfce4-diskperf-plugin
+xfce4-eyes-plugin
+xfce4-fsguard-plugin
+xfce4-genmon-plugin
+xfce4-mailwatch-plugin
+xfce4-mount-plugin
+xfce4-mpc-plugin
+xfce4-netload-plugin
+xfce4-notes-plugin
+xfce4-notifyd
+xfce4-panel
+xfce4-places-plugin
+xfce4-power-manager
+xfce4-pulseaudio-plugin
+xfce4-screensaver
+xfce4-screenshooter
+xfce4-sensors-plugin
+xfce4-session
+xfce4-settings
+xfce4-smartbookmark-plugin
+xfce4-systemload-plugin
+xfce4-taskmanager
+xfce4-terminal
+xfce4-time-out-plugin
+xfce4-timer-plugin
+xfce4-verve-plugin
+xfce4-wavelan-plugin
+xfce4-weather-plugin
+xfce4-whiskermenu-plugin
+xfce4-xkb-plugin
+xfconf
+xfdesktop
+xfsprogs
+xfwm4
+xl2tpd
+xorg-bdftopcf
+xorg-docs
+xorg-font-util
+xorg-fonts-100dpi
+xorg-fonts-75dpi
+xorg-fonts-encodings
+xorg-iceauth
+xorg-mkfontscale
+xorg-server
+xorg-server-common
+xorg-server-devel
+xorg-server-src
+xorg-server-xephyr
+xorg-server-xnest
+xorg-server-xvfb
+xorg-sessreg
+xorg-setxkbmap
+xorg-smproxy
+xorg-twm
+xorg-x11perf
+xorg-xauth
+xorg-xbacklight
+xorg-xclock
+xorg-xcmsdb
+xorg-xcursorgen
+xorg-xdpyinfo
+xorg-xdriinfo
+xorg-xev
+xorg-xgamma
+xorg-xhost
+xorg-xinit
+xorg-xinput
+xorg-xkbcomp
+xorg-xkbevd
+xorg-xkbprint
+xorg-xkbutils
+xorg-xkill
+xorg-xlsatoms
+xorg-xlsclients
+xorg-xmodmap
+xorg-xpr
+xorg-xprop
+xorg-xrandr
+xorg-xrdb
+xorg-xrefresh
+xorg-xset
+xorg-xsetroot
+xorg-xvinfo
+xorg-xwayland
+xorg-xwd
+xorg-xwininfo
+xorg-xwud
+xterm
